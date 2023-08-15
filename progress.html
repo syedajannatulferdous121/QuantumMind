@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Progress - QuantumMind</title>
+</head>
+<body>
+    <header>
+        <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="progress.html">My Progress</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="progress">
+            <h2>My Progress</h2>
+            <div class="course-progress">
+                <h3>JavaScript Fundamentals</h3>
+                <p>You have completed 5 out of 10 lessons.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                </div>
+                <button class="btn" onclick="showLessons('javascript')">View Lessons</button>
+            </div>
+            <div class="course-progress">
+                <h3>Web Development Basics</h3>
+                <p>You have completed 3 out of 8 lessons.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 37.5%;"></div>
+                </div>
+                <button class="btn" onclick="showLessons('webdev')">View Lessons</button>
+            </div>
+            <!-- Add more courses and progress bars as needed -->
+        </section>
+
+        <!-- Lessons Modal -->
+        <div id="lessons-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3 id="lesson-title">JavaScript Fundamentals</h3>
+                <ul id="lesson-list">
+                    <!-- Lessons will be dynamically populated here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       <p>&copy; 2023 QuantumMind. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
